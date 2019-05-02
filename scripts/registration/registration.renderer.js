@@ -9,11 +9,14 @@ function regRenderer() {
     passwordDiv.className = "regInputRow";
     let emailDiv = document.createElement("div");
     emailDiv.className = "regInputRow";
+    let buttonDiv = document.createElement("div");
+    buttonDiv.className = "regInputRow";
 
     mainDiv.appendChild(nameDiv);
     mainDiv.appendChild(usernameDiv);
     mainDiv.appendChild(passwordDiv);
     mainDiv.appendChild(emailDiv);
+    mainDiv.appendChild(buttonDiv);
 
     let nameInput = document.createElement("input");
     nameInput.setAttribute("name", "name");
@@ -29,6 +32,7 @@ function regRenderer() {
 
     let passwordInput = document.createElement("input");
     passwordInput.setAttribute("name", "password");
+    passwordInput.setAttribute("type", "password");
     let passwordLabel = document.createElement("label");
     passwordLabel.setAttribute("for", "password");
     passwordLabel.innerText = "Password";
@@ -49,6 +53,18 @@ function regRenderer() {
     passwordDiv.appendChild(passwordInput);
     emailDiv.appendChild(emailInput);
 
+    let submit = document.createElement("button");
+    submit.innerText = "Register";
+    submit.addEventListener("click", function(){
+       let name = nameInput.value;
+        let username = nameInput.value;
+        let password = nameInput.value;
+        let email = nameInput.value;
+        userReg(name, username, password, email, "visitor");
+        console.log(MEMBERARR);
+    });
+
+    buttonDiv.appendChild(submit);
 
 }
 regRenderer();
