@@ -1,0 +1,19 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    margin: 5% 0 0 25%;
+}
+
+.regInputRow{
+    width: 250px;
+    height: 30px;
+}
+
+input {
+    float: right;
+    margin-bottom: 5px;
+}
+
