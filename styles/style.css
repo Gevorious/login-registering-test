@@ -1,10 +1,15 @@
 body, html{
     margin: 0;
     padding: 0;
+    background-color: #98b7b9;
 }
 
 #main{
     margin: 5% 0 0 25%;
+    padding: 20px;
+    width: 600px;
+    min-height: 600px;
+    background-color: white;
 }
 
 .regInputRow{

@@ -1,0 +1,24 @@
+.photo{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../images/no_prof_pic.png");
+    border: 1px solid black;
+    margin: 10px;
+    vertical-align: bottom;
+}
+
+.username{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    vertical-align: bottom;
+
+}
+.header{
+    height: 120px;
+
+}

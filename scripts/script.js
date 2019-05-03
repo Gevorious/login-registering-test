@@ -1,6 +1,6 @@
 let MEMBERARR = [];
 class User{
-    constructor(name, password, username, email, type){
+    constructor(name, username, password,  email, type){
         this.name = name;
         this.pass = password;
         this.usrname = username;

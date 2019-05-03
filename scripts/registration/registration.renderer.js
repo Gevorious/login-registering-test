@@ -56,15 +56,14 @@ function regRenderer() {
     let submit = document.createElement("button");
     submit.innerText = "Register";
     submit.addEventListener("click", function(){
-       let name = nameInput.value;
-        let username = nameInput.value;
-        let password = nameInput.value;
-        let email = nameInput.value;
+        let name = nameInput.value;
+        let username = usernameInput.value;
+        let password = passwordInput.value;
+        let email = emailInput.value;
         userReg(name, username, password, email, "visitor");
         console.log(MEMBERARR);
+        createProfile();
     });
-
     buttonDiv.appendChild(submit);
-
 }
 regRenderer();
