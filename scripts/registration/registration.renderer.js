@@ -1,5 +1,6 @@
 function regRenderer() {
     let mainDiv = document.querySelector('#main');
+    let inputsDiv = document.createElement("div");
 
     let nameDiv = document.createElement("div");
     nameDiv.className = "regInputRow";
@@ -12,11 +13,12 @@ function regRenderer() {
     let buttonDiv = document.createElement("div");
     buttonDiv.className = "regInputRow";
 
-    mainDiv.appendChild(nameDiv);
-    mainDiv.appendChild(usernameDiv);
-    mainDiv.appendChild(passwordDiv);
-    mainDiv.appendChild(emailDiv);
-    mainDiv.appendChild(buttonDiv);
+    mainDiv.appendChild(inputsDiv);
+    inputsDiv.appendChild(nameDiv);
+    inputsDiv.appendChild(usernameDiv);
+    inputsDiv.appendChild(passwordDiv);
+    inputsDiv.appendChild(emailDiv);
+    inputsDiv.appendChild(buttonDiv);
 
     let nameInput = document.createElement("input");
     nameInput.setAttribute("name", "name");
