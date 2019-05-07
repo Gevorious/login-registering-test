@@ -1,24 +1,55 @@
 body, html{
     margin: 0;
     padding: 0;
-    background-color: #98b7b9;
+}
+
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #2c565b;
+    border: 1px solid #2c565b; 
+    border-radius: 5%;
 }
 
 #main{
-    margin: 5% 0 0 25%;
-    padding: 20px;
-    width: 600px;
-    min-height: 600px;
     background-color: white;
 }
 
-.regInputRow{
-    width: 250px;
-    height: 30px;
+div.header, div.content, div.footer {
+
+}
+div.header, div.footer {
+    color: white;
+    background-color:  #2c565b;
 }
 
-input {
-    float: right;
-    margin-bottom: 5px;
+div.header{
+    height: 60px;
+    text-align: center;
+}
+div.footer{
+    height: 120px;
+}
+div.content{
+    min-height: 600px;  
 }
 
+div.title_div, div.logo{
+    display: inline-block;
+}
+
+div.logo{
+    width: 100px;
+    height: 60px;
+    float: left;
+    background-image: url(../images/logo_small.png);
+    background-repeat:no-repeat;
+}
+div.title_div{
+    height: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    padding-top: 15px; 
+}

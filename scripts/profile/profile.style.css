@@ -4,21 +4,31 @@
     height: 100px;
     background-image: url("../../images/no_prof_pic.png");
     border: 1px solid black;
-    margin: 10px;
+    margin: 20px;
+    vertical-align: bottom;
+}
+.info{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 20px;
+}
+.name, .username{
+    display: inline-block;
     vertical-align: bottom;
 }
 
-.username{
-    display: inline-block;
-    width: 250px;
-    margin: 10px;
-    font-size: 22pt;
+.name{
+    width: 300px;
+    font-size: 20pt;
     font-weight: bold;
     font-family: "Segoe UI", sans-serif;
-    vertical-align: bottom;
-
 }
-.header{
+.username{
+    width: 150px;
+    font-size: 12pt;
+    font-style: italic;
+    font-family: "Segoe UI", sans-serif;
+}
+.name_area{
     height: 120px;
-
 }

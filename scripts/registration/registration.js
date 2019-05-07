@@ -1,4 +1,4 @@
-function userReg(_name, _username, _password, _email){
-    let user = new User(_name, _username, _password, _email, "visitor");
+function userReg(_user){
+    let user = new User(_user.name, _user.username, _user.password, _user.email, "visitor");
     user.add();
 }

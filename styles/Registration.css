@@ -1,0 +1,24 @@
+#inputs_div{
+    width: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.regInputRow{
+    width: 420px;
+    height: 30px;
+}
+
+input.reg {
+    width: 300px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+button.reg{
+   float: right;
+   font-size: 10pt;
+   width: 80px;
+   height: 30px;
+}

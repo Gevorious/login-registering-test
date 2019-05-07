@@ -1,19 +1,30 @@
-function createProfile(){
-    document.querySelector("#main").innerHTML = "";
+function createProfile(_user){
+    let mainFrame = new PageFrame("");
+    mainFrame.createFrame();
 
     let mainDiv = document.querySelector("#main");
 
-    let headerDiv = document.createElement("div");
-    headerDiv.className = "header";
+    let contentDiv = document.createElement("div");
+    contentDiv.className = "name_area";
 
     let photoDiv = document.createElement("div");
     photoDiv.className = "photo";
 
-    let nameDiv = document.createElement("div");
-    nameDiv.className = "username";
-    nameDiv.innerText = MEMBERARR[0].usrname;
+    let infoDiv = document.createElement("div");
+    infoDiv.className = "info";
 
-    mainDiv.appendChild(headerDiv);
-    headerDiv.appendChild(photoDiv);
-    headerDiv.appendChild(nameDiv);
+    let nameDiv = document.createElement("div");
+    nameDiv.className = "name";
+    nameDiv.innerText = _user.name;
+
+    let usernameDiv = document.createElement("div");
+    usernameDiv.className = "username";
+    usernameDiv.innerText = _user.usrname;
+
+    mainFrame.content.appendChild(contentDiv);
+    contentDiv.appendChild(photoDiv);
+    contentDiv.appendChild(infoDiv);
+    infoDiv.appendChild(nameDiv);
+    infoDiv.innerHTML += "</br>";
+    infoDiv.appendChild(usernameDiv);
 }
