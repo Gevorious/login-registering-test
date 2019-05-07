@@ -1,6 +1,7 @@
 function regRenderer() {
     let mainDiv = document.querySelector('#main');
     let inputsDiv = document.createElement("div");
+    inputsDiv.setAttribute("id", "inputs_div");
 
     let nameDiv = document.createElement("div");
     nameDiv.className = "regInputRow";
