@@ -13,6 +13,10 @@ class User{
     }
     add(){
         MEMBERARR.push(this);
+        const usersRequest = new XMLHttpRequest();
+        usersRequest.onload = function(){
+            
+        }
     }
 }
 class Admin extends User{
