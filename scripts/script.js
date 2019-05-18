@@ -13,10 +13,11 @@ class User{
     }
     add(){
         MEMBERARR.push(this);
-        const usersRequest = new XMLHttpRequest();
-        usersRequest.onload = function(){
-            
-        }
+        const jsonString = JSON.stringify(this);
+        const xhrUsers = new XMLHttpRequest();
+        xhrUsers.open("POST", "http://localhost:3000/users", true);
+        xhrUsers.setRequestHeader("Content-Type", "application/json");
+        xhrUsers.send(jsonString);
     }
 }
 class Admin extends User{

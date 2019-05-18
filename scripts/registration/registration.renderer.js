@@ -72,7 +72,6 @@ function regRenderer() {
        userObj.email = emailInput.value;
         userReg(userObj, "visitor");
         loginRenderer();
-        console.log(MEMBERARR);
     });
     buttonDiv.appendChild(submit);
 }

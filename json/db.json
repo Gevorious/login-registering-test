@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gevorg",
+      "username": "Gevorious",
+      "password": "6@Rs?MB-hN",
+      "email": "gevorgpahlevanyan@gmail.com",
+      "type": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Gev",
+      "username": "Gevorious",
+      "password": "6@Rs?MB-hN",
+      "email": "gevorgpahlevanyan@gmail.com",
+      "type": "admin"
+    }
+  ]
+}
